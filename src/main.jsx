@@ -8,10 +8,8 @@ import {
 import MainLayout from './component/MainLayout.jsx';
 import NotfoundPage from './pages/NotfoundPage.jsx';
 import Home from './pages/Home.jsx';
-import Assignments from './pages/Assignments.jsx';
 import Details from './pages/Details.jsx';
 import Login from './pages/Login.jsx';
-import Dashboard from './pages/Dashboard.jsx';
 import AddAssignment from './pages/AddAssignment.jsx';
 import Update from './pages/Update.jsx';
 import About from './pages/About.jsx';
@@ -32,10 +30,6 @@ const router = createBrowserRouter([
         loader: () => fetch('http://localhost:5000/assignments')
       },
       {
-        path: '/assignments',
-        element: <Assignments></Assignments>
-      },
-      {
         path: '/details/:id',
         element:<PrivateRoute><Details></Details></PrivateRoute>,
         loader: ({params}) => fetch(`http://localhost:5000/assignments/${params.id}`)
@@ -44,10 +38,6 @@ const router = createBrowserRouter([
         path: '/update/:id',
         element: <Update></Update>,
         loader: ({params}) => fetch(`http://localhost:5000/assignments/${params.id}`)
-      },
-      {
-        path: '/dashboard',
-        element: <Dashboard></Dashboard>
       },
       {
         path: '/addassignment',

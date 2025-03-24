@@ -25,11 +25,9 @@ const Home = () => {
                     <p className="text-gray-600 text-base md:text-lg mb-6">
                         We provide the best services to help you grow. Join us today and make a difference!
                     </p>
-                    <Link to='/dashboard'>
-                        <button className="bg-blue-500 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-600">
+                    <button className="bg-blue-500 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-600">
                             Get Started
                         </button>
-                    </Link>
                 </div>
 
                 {/* Image Section */}
