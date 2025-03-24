@@ -27,17 +27,17 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('https://assignment-job-server-dkbc92rqk-sunil1986s-projects.vercel.app/assignments')
+        loader: () => fetch('https://assignment-job-server-1enukzb23-sunil1986s-projects.vercel.app/assignments')
       },
       {
         path: '/details/:id',
         element:<PrivateRoute><Details></Details></PrivateRoute>,
-        loader: ({params}) => fetch(`https://assignment-job-server-dkbc92rqk-sunil1986s-projects.vercel.app/assignments/${params.id}`)
+        loader: ({params}) => fetch(`https://assignment-job-server-1enukzb23-sunil1986s-projects.vercel.app/assignments/${params.id}`)
       },
       {
         path: '/update/:id',
         element: <Update></Update>,
-        loader: ({params}) => fetch(`https://assignment-job-server-dkbc92rqk-sunil1986s-projects.vercel.app/assignments/${params.id}`)
+        loader: ({params}) => fetch(`https://assignment-job-server-1enukzb23-sunil1986s-projects.vercel.app/assignments/${params.id}`)
       },
       {
         path: '/addassignment',
