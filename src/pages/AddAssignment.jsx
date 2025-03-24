@@ -18,7 +18,7 @@ const AddAssignment = () => {
       
       console.log(assignment);
 
-       fetch("http://localhost:5000/assignments", {
+       fetch("https://assignment-job-server-dkbc92rqk-sunil1986s-projects.vercel.app/assignments", {
         method: "POST",
         headers: {
              "Content-Type": "application/json" 

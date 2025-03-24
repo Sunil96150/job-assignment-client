@@ -28,7 +28,7 @@ const Details = () => {
             //     icon: "success"
             //   });
 
-            fetch(`http://localhost:5000/assignments/${assignment._id}`, {
+            fetch(`https://assignment-job-server-dkbc92rqk-sunil1986s-projects.vercel.app/assignments/${assignment._id}`, {
                 method: 'DELETE'
             } )
             .then(res => res.json())
