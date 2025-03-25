@@ -39,7 +39,7 @@ const Update = () => {
     };
 
     // Send the PUT request with the correct ID
-    fetch(`https://assignment-job-server-1enukzb23-sunil1986s-projects.vercel.app/assignments/${assignment._id}`, {
+    fetch(`https://server-side-of-job.vercel.app/assignments/${assignment._id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedAssignment),
